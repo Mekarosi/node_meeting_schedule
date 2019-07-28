@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const PORT = 5000;
 const mongo = require("mongoose")
+const cors = require("cors");
 
 
-
-
+app.use(cors());
 app.use(express.json());
 
 mongo.connect("mongodb+srv://mekarosi:caroline2411%@cluster0-jiqvx.mongodb.net/test?retryWrites=true&w=majority", err => {
