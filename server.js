@@ -8,13 +8,16 @@ const mongo = require("mongoose")
 
 app.use(express.json());
 
-mongo.connect("mongodb+srv://mekarosi:mekarosi@cluster0-jiqvx.mongodb.net/test?retryWrites=true&w=majority", err => {
+mongo.connect("mongodb+srv://mekarosi:caroline2411%@cluster0-jiqvx.mongodb.net/test?retryWrites=true&w=majority", err => {
 if (err){
     console.log("BROKEN")
 }else{
    console.log("CONNECTED")
 }
 });
+
+
+
 
 
 const user = require('./models/users')
